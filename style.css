@@ -4,9 +4,19 @@ body{
 }
 
 .image-box {
-    width:400px;
-    height:400px;
+    width:360px;
+    height:360px;
     overflow:hidden;
+    flex:1; 
+    margin: 1rem; 
+    min-width: 360px; 
+    max-width: 360px;
+    transition: opacity 0.2s ease-in;
+}
+
+.image-box:hover{
+    opacity: 0.7;
+    transition: opacity 0.2s ease-out;
 }
 
 .image-thumbnail {
@@ -14,3 +24,4 @@ body{
     height:100%;
     object-fit:cover;
 }
+
